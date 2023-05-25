@@ -5,14 +5,13 @@
         static void Main(string[] args)
         {
 
+            var r = new Random();
+            var favNumber = r.Next(1, 1000);
+
             Console.WriteLine("Play a game? Guess my favorite number!");
             Console.WriteLine("Input now.");
 
-            string input = Console.ReadLine();
-
-            int guessE = int.Parse(input);
-
-            var favNumber = 70;
+            var guessE = int.Parse(Console.ReadLine());
            
 
             if (guessE < favNumber)
@@ -27,8 +26,6 @@
             {
                 Console.WriteLine($"Nevermind.");
             }
-
-
 
 
 
